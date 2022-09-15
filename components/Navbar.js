@@ -7,6 +7,7 @@ export default function Navbar() {
 
   return (
     <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
+      {/** Logo */}
       <div className="flex  md:flex-row justify-between items-center">
         <div className="flex flex-col">
           <Link href="/">
@@ -18,11 +19,11 @@ export default function Navbar() {
             </a>
           </Link>
         </div>
-
+        {/** Page links */}
         <div className="space-x-8 hidden md:block">
           <ul className="flex">
             <li className="mr-6">
-              <Link href="/about">
+              <Link href="/about" key={"about"}>
                 <a
                   className={`text-base  ${
                     router.asPath === "/about"
@@ -34,7 +35,7 @@ export default function Navbar() {
                 </a>
               </Link>
             </li>
-            <li className="mr-6">
+            <li className="mr-6" key={"projects"}>
               <Link href="/projects">
                 <a
                   className={`text-base  ${
@@ -47,7 +48,7 @@ export default function Navbar() {
                 </a>
               </Link>
             </li>
-            <li className="mr-6">
+            <li className="mr-6" key={"blog"}>
               <Link href="/blog">
                 <a
                   className={`text-base  ${
@@ -60,7 +61,7 @@ export default function Navbar() {
                 </a>
               </Link>
             </li>
-            <li className="">
+            <li key={"contact"}>
               <Link href="/contact">
                 <a
                   className={`text-base  ${
@@ -75,10 +76,10 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-
+        {/** Social Media links */}
         <div className="space-x-4 flex flex-row items-center">
           <ul className="flex">
-            <li className="mr-2">
+            <li className="mr-2" key={"instagram"}>
               <a
                 href={userData.socialLinks.instagram}
                 className="text-base font-normal text-gray-600 dark:text-gray-300"
@@ -95,7 +96,7 @@ export default function Navbar() {
                 </svg>
               </a>
             </li>
-            <li>
+            <li key={"linkedin"}>
               <a
                 href={userData.socialLinks.linkedin}
                 className="text-base font-normal text-gray-600"
@@ -116,24 +117,25 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/** Navbar on smaller screens */}
       <div className="space-x-8 block md:hidden mt-4">
         <ul className="flex">
-          <li className="mr-6">
+          <li className="mr-6" key={"about"}>
             <Link href="/about">
               <a className="text-base font-normal text-gray-600">About</a>
             </Link>
           </li>
-          <li className="mr-6">
+          <li className="mr-6" key={"projects"}>
             <Link href="/projects">
               <a className="text-base font-normal text-gray-600">Projects</a>
             </Link>
           </li>
-          <li className="mr-6">
-            <Link href="/experience">
-              <a className="text-base font-normal text-gray-600">Experience</a>
+          <li className="mr-6" key={"blog"}>
+            <Link href="/blog">
+              <a className="text-base font-normal text-gray-600">Blog</a>
             </Link>
           </li>
-          <li className="">
+          <li key={"contact"}>
             <Link href="/contact">
               <a className="text-base font-normal text-gray-600">Contact</a>
             </Link>
