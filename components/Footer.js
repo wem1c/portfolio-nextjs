@@ -3,7 +3,7 @@ import userData from "@constants/data";
 
 export default function Footer() {
   return (
-    <div className="bg-[#F1F1F1] dark:bg-gray-900">
+    <div className="bg-[#F1F1F1]">
       <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
         <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8">
           {/** Copyright */}
@@ -26,7 +26,7 @@ export default function Footer() {
               <li className="mr-2" key={"ig-footer"}>
                 <a
                   href={userData.socialLinks.instagram}
-                  className="text-base font-normal text-gray-600 dark:text-gray-300"
+                  className="text-base font-normal text-gray-600"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ export default function Footer() {
               <li key={"linkedin-footer"}>
                 <a
                   href={userData.socialLinks.linkedin}
-                  className="text-base font-normal text-gray-600 dark:text-gray-300"
+                  className="text-base font-normal text-gray-600"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
