@@ -11,67 +11,62 @@ export default function Navbar() {
       <div className="flex  md:flex-row justify-between items-center">
         <div className="flex flex-col">
           <Link href="/">
-            <a>
-              <h1 className="font-semibold text-xl">{userData.name}</h1>
-              <p className="text-base font-light text-gray-500">
-                {userData.designation}
-              </p>
-            </a>
+            <h1 className="font-semibold text-xl">{userData.name}</h1>
+            <p className="text-base font-light text-gray-500">
+              {userData.designation}
+            </p>
           </Link>
         </div>
         {/** Page links */}
         <div className="space-x-8 hidden md:block">
           <ul className="flex">
             <li className="mr-6">
-              <Link href="/about" key={"about"}>
-                <a
-                  className={`text-base  ${
-                    router.asPath === "/about"
-                      ? "text-gray-800 font-bold"
-                      : "text-gray-600 font-normal "
-                  }`}
-                >
-                  About{" "}
-                </a>
+              <Link
+                href="/about"
+                key={"about"}
+                className={`text-base  ${
+                  router.asPath === "/about"
+                    ? "text-gray-800 font-bold"
+                    : "text-gray-600 font-normal "
+                }`}
+              >
+                About{" "}
               </Link>
             </li>
             <li className="mr-6" key={"projects"}>
-              <Link href="/projects">
-                <a
-                  className={`text-base  ${
-                    router.asPath === "/projects"
-                      ? "text-gray-800 font-bold "
-                      : "text-gray-600 font-normal "
-                  }`}
-                >
-                  Projects
-                </a>
+              <Link
+                href="/projects"
+                className={`text-base  ${
+                  router.asPath === "/projects"
+                    ? "text-gray-800 font-bold "
+                    : "text-gray-600 font-normal "
+                }`}
+              >
+                Projects
               </Link>
             </li>
             <li className="mr-6" key={"blog"}>
-              <Link href="/blog">
-                <a
-                  className={`text-base  ${
-                    router.asPath === "/blog"
-                      ? "text-gray-800 font-bold"
-                      : "text-gray-600 font-normal "
-                  }`}
-                >
-                  Blog{" "}
-                </a>
+              <Link
+                href="/blog"
+                className={`text-base  ${
+                  router.asPath === "/blog"
+                    ? "text-gray-800 font-bold"
+                    : "text-gray-600 font-normal "
+                }`}
+              >
+                Blog{" "}
               </Link>
             </li>
             <li key={"contact"}>
-              <Link href="/contact">
-                <a
-                  className={`text-base  ${
-                    router.asPath === "/contact"
-                      ? "text-gray-800 font-bold"
-                      : "text-gray-600 font-normal "
-                  }`}
-                >
-                  Contact
-                </a>
+              <Link
+                href="/contact"
+                className={`text-base  ${
+                  router.asPath === "/contact"
+                    ? "text-gray-800 font-bold"
+                    : "text-gray-600 font-normal "
+                }`}
+              >
+                Contact
               </Link>
             </li>
           </ul>
@@ -121,23 +116,29 @@ export default function Navbar() {
       <div className="space-x-8 block md:hidden mt-4">
         <ul className="flex">
           <li className="mr-6" key={"about"}>
-            <Link href="/about">
-              <a className="text-base font-normal text-gray-600">About</a>
+            <Link href="/about" className="text-base font-normal text-gray-600">
+              About
             </Link>
           </li>
           <li className="mr-6" key={"projects"}>
-            <Link href="/projects">
-              <a className="text-base font-normal text-gray-600">Projects</a>
+            <Link
+              href="/projects"
+              className="text-base font-normal text-gray-600"
+            >
+              Projects
             </Link>
           </li>
           <li className="mr-6" key={"blog"}>
-            <Link href="/blog">
-              <a className="text-base font-normal text-gray-600">Blog</a>
+            <Link href="/blog" className="text-base font-normal text-gray-600">
+              Blog
             </Link>
           </li>
           <li key={"contact"}>
-            <Link href="/contact">
-              <a className="text-base font-normal text-gray-600">Contact</a>
+            <Link
+              href="/contact"
+              className="text-base font-normal text-gray-600"
+            >
+              Contact
             </Link>
           </li>
         </ul>
