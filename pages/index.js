@@ -1,6 +1,6 @@
 // Component imports
 import Hero from "../components/Hero";
-import FavouriteProjects from "../components/FavouriteProjects";
+import FavouriteProjects from "../components/projects/FavouriteProjects";
 import LatestCode from "../components/LatestCode";
 import getLatestRepos from "@lib/getLatestRepos";
 
