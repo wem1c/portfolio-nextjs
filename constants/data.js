@@ -1,8 +1,6 @@
 const userData = {
-  githubUsername: "wem1c",
   name: "Conor C. Peterson",
   designation: "Full-Stack Developer",
-  avatarUrl: "/avatar.png",
   email: "conorpetersondev@gmail.com",
   phone: "+91 9587738861",
   address: "Jaipur, Rajasthan, India.",
