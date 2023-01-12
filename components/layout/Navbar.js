@@ -6,21 +6,19 @@ export default function Navbar() {
   const router = useRouter();
 
   return (
-    <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
-      {/** Logo */}
-      <div className="flex  md:flex-row justify-between items-center">
+    <div className="max-w-7xl mx-auto p-3">
+      <div className="flex md:flex-row justify-between items-center">
         <div className="flex flex-col">
           <Link href="/">
-            <h1 className="font-semibold text-xl">{userData.name}</h1>
+            <h1 className="font-semibold text-xl">Conor C. Peterson</h1>
             <p className="text-base font-light text-gray-500">
-              {userData.designation}
+              Fullstack Web Developer
             </p>
           </Link>
         </div>
-        {/** Page links */}
-        <div className="space-x-8 hidden md:block">
-          <ul className="flex">
-            <li className="mr-6">
+        <div className="hidden md:block">
+          <ul className="flex space-x-6">
+            <li>
               <Link
                 href="/about"
                 key={"about"}
@@ -30,10 +28,10 @@ export default function Navbar() {
                     : "text-gray-600 font-normal "
                 }`}
               >
-                About{" "}
+                About
               </Link>
             </li>
-            <li className="mr-6" key={"projects"}>
+            <li key={"projects"}>
               <Link
                 href="/projects"
                 className={`text-base  ${
@@ -45,7 +43,7 @@ export default function Navbar() {
                 Projects
               </Link>
             </li>
-            <li className="mr-6" key={"blog"}>
+            <li key={"blog"}>
               <Link
                 href="/blog"
                 className={`text-base  ${
@@ -54,7 +52,7 @@ export default function Navbar() {
                     : "text-gray-600 font-normal "
                 }`}
               >
-                Blog{" "}
+                Blog
               </Link>
             </li>
             <li key={"contact"}>
@@ -112,31 +110,53 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/** Navbar on smaller screens */}
-      <div className="space-x-8 block md:hidden mt-4">
-        <ul className="flex">
-          <li className="mr-6" key={"about"}>
-            <Link href="/about" className="text-base font-normal text-gray-600">
+      {/** On smaller screens show page links under the rest of the navbar */}
+      <div className="block md:hidden mt-4">
+        <ul className="flex justify-center space-x-6">
+          <li key={"about"}>
+            <Link
+              href="/about"
+              className={`text-base  ${
+                router.asPath === "/about"
+                  ? "text-gray-800 font-bold"
+                  : "text-gray-600 font-normal "
+              }`}
+            >
               About
             </Link>
           </li>
-          <li className="mr-6" key={"projects"}>
+          <li key={"projects"}>
             <Link
               href="/projects"
-              className="text-base font-normal text-gray-600"
+              className={`text-base  ${
+                router.asPath === "/projects"
+                  ? "text-gray-800 font-bold"
+                  : "text-gray-600 font-normal "
+              }`}
             >
               Projects
             </Link>
           </li>
-          <li className="mr-6" key={"blog"}>
-            <Link href="/blog" className="text-base font-normal text-gray-600">
+          <li key={"blog"}>
+            <Link
+              href="/blog"
+              className={`text-base  ${
+                router.asPath === "/blog"
+                  ? "text-gray-800 font-bold"
+                  : "text-gray-600 font-normal "
+              }`}
+            >
               Blog
             </Link>
           </li>
           <li key={"contact"}>
             <Link
               href="/contact"
-              className="text-base font-normal text-gray-600"
+              className={`text-base  ${
+                router.asPath === "/contact"
+                  ? "text-gray-800 font-bold"
+                  : "text-gray-600 font-normal "
+              }`}
             >
               Contact
             </Link>
