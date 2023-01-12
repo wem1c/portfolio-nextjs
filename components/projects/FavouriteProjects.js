@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 // Component imports
-import Project from "./Project";
+import Project from "../Project";
 
 // Image imports
 import pokemonImage from "../public/projects/pokemon_1600x900.png";
