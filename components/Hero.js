@@ -15,23 +15,25 @@ export default function Hero() {
     { text: "Engineer", color: "#10B32A" },
   ];
   return (
-    <section className="flex flex-col md:flex-row lg:flex-row overflow-hidden items-center">
+    <section className="">
       {/* Rough text container */}
-      <div className="w-full mx-auto px-5 text-center">
-        <RoughNotationGroup show={true}>
-          {highlightedWords.map((word, _idx) => {
-            return (
-              <RainbowHighlight key={_idx} color={word.color}>
-                <h1 className="text-4xl font-bold text-gray-700 my-2">
-                  {word.text}
-                </h1>
-              </RainbowHighlight>
-            );
-          })}
-        </RoughNotationGroup>
+      <div className="max-w-7xl mx-auto flex flex-col items-center overflow-hidden md:flex-row lg:flex-row">
+        <div className="w-full mx-auto px-5 text-center">
+          <RoughNotationGroup show={true}>
+            {highlightedWords.map((word, _idx) => {
+              return (
+                <RainbowHighlight key={_idx} color={word.color}>
+                  <h1 className="text-4xl font-bold text-gray-700 my-2">
+                    {word.text}
+                  </h1>
+                </RainbowHighlight>
+              );
+            })}
+          </RoughNotationGroup>
+        </div>
+        {/* Image container */}
+        <Image src={avatar} alt="avatar" className="flex w-1/2" />
       </div>
-      {/* Image container */}
-      <Image src={avatar} alt="avatar" className="flex w-1/2" />
     </section>
   );
 }

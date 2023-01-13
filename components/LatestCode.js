@@ -35,7 +35,7 @@ export default function LatestCode({ repositories }) {
         </Link>
       </header>
 
-      <ul className="grid md:grid-cols-2 px-10 gap-10">
+      <ul className="grid gap-10 max-w-7xl mx-auto px-10 md:grid-cols-2">
         {repositories.length > 0 ? (
           repositories.map((repository, _idx) => {
             return <Repository key={_idx} repo={repository} />;

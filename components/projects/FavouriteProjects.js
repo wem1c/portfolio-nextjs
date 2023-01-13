@@ -52,7 +52,7 @@ export default function FavouriteProjects() {
       </header>
 
       {/* Grid starts here */}
-      <div className="grid gap-5 md:grid-cols-2">
+      <div className="grid gap-5 md:grid-cols-2 max-w-7xl mx-auto">
         {favoriteProjects.length > 0 ? (
           favoriteProjects.map((project, _idx) => {
             return (

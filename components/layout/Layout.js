@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     <>
       <Meta />
       <Navbar />
-      <main className="max-w-7xl mx-auto">{children[0]}</main>
+      <main>{children[0]}</main>
       <Footer />
     </>
   );
