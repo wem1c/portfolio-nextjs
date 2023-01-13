@@ -5,8 +5,8 @@ import Link from "next/link";
 import Project from "./Project";
 
 // Image imports
-import pokemonImage from "../public/projects/pokemon_1600x900.png";
-import googleImage from "../public/projects/google_1600x900.png";
+import pokemonImage from "@public/projects/pokemon_1600x900.png";
+import googleImage from "@public/projects/google_1600x900.png";
 
 const favoriteProjects = [
   {
