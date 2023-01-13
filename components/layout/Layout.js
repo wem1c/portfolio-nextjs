@@ -1,5 +1,5 @@
 import Meta from "@components/Meta";
-import Navbar from "./Navbar";
+import Navbar from "./nav/Navbar";
 import Footer from "./Footer";
 
 export default function Layout({ children }) {
