@@ -27,27 +27,28 @@ const socialMediaSVGs = [
 
 export default function Navbar() {
   return (
-    <div className="max-w-7xl mx-auto p-3">
-      <div className="flex md:flex-row justify-between items-center">
-        <div className="flex flex-col">
-          <Link href="/">
-            <h1 className="font-semibold text-xl">Conor C. Peterson</h1>
-            <p className="text-base font-light text-gray-500">
-              Full-Stack Developer
+    <div className='max-w-7xl mx-auto p-3'>
+      <div className='flex md:flex-row justify-between items-center'>
+        <div className='flex flex-col'>
+          <Link href='/'>
+            <h1 className='font-semibold text-xl'>Conor C. Peterson</h1>
+            <p className='text-base font-light text-gray-500'>
+              Fullstack Developer
             </p>
           </Link>
         </div>
-        <div className="hidden md:block">
-          <ul className="flex space-x-6">
-            {pages.map((page) => (
-              <NavLink name={page.name} path={page.path} />
+        <div className='hidden md:block'>
+          <ul className='flex space-x-6'>
+            {pages.map((page, idx) => (
+              <NavLink key={idx} name={page.name} path={page.path} />
             ))}
           </ul>
         </div>
         {/** Social Media links */}
-        <ul className="flex space-x-4 items-center">
+        <ul className='flex space-x-4 items-center'>
           {socialMediaSVGs.map((svg) => (
             <SocialMediaLink
+              key={svg.iconName}
               url={svg.url}
               iconName={svg.iconName}
               path={svg.path}
@@ -56,11 +57,10 @@ export default function Navbar() {
         </ul>
       </div>
 
-      {/** On smaller screens show page links under the rest of the navbar */}
-      <div className="block md:hidden mt-4">
-        <ul className="flex justify-center space-x-6">
-          {pages.map((page) => (
-            <NavLink name={page.name} path={page.path} />
+      <div className='block md:hidden mt-4'>
+        <ul className='flex justify-center space-x-6'>
+          {pages.map((page, idx) => (
+            <NavLink key={idx} name={page.name} path={page.path} />
           ))}
         </ul>
       </div>
