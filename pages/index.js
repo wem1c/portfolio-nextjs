@@ -14,7 +14,7 @@ export default function Home({ repositories }) {
   );
 }
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const repoCount = 6;
   try {
     const repositories = await getLatestRepos(repoCount);
