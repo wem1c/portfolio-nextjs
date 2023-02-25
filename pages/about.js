@@ -1,11 +1,31 @@
-import React from "react";
-import ContainerBlock from "../components/ContainerBlock";
+// Module imports
+import Head from "next/head";
+
+// Component imports
+import EmailMe from "@components/EmailMe";
 import AboutMe from "../components/AboutMe";
+import CurrentTechStack from "@components/tech-stacks/CurrentTechStack";
+import FutureTechStack from "@components/tech-stacks/FutureTechStack";
+
+// Data imports
+import Avatar from "@public/images/selfie_avatar.jpg";
 
 export default function about() {
   return (
-    <ContainerBlock>
-      <AboutMe />
-    </ContainerBlock>
+    <>
+      <Head>
+        <title>About - Conor C. Peterson</title>
+      </Head>
+      <section className='max-w-7xl mx-auto flex flex-col justify-center items-center lg:flex-row'>
+        <EmailMe image={Avatar} />
+        <AboutMe />
+      </section>
+      <section className=' bg-green-800'>
+        <div className='max-w-7xl mx-auto flex justify-between flex-col lg:flex-row'>
+          <CurrentTechStack />
+          <FutureTechStack />
+        </div>
+      </section>
+    </>
   );
 }
