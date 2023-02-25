@@ -3,7 +3,7 @@ import Button from "@components/Button";
 import Project from "./Project";
 
 // Image imports
-import pokemonImage from "@public/projects/pokemon_1600x900.png";
+import pokemonImage from "@public/images/projects/pokemon_1600x900.png";
 
 const favoriteProjects = [
   {
@@ -15,9 +15,9 @@ const favoriteProjects = [
 
 export default function FavouriteProjects() {
   return (
-    <section className='space-y-5 py-10'>
+    <section className='bg-green-800 space-y-10 p-5'>
       <header className='flex flex-col items-center space-y-5'>
-        <h1 className='text-5xl text-gray-600 font-bold text-center'>
+        <h1 className='text-4xl text-tan font-bold text-center'>
           Favorite Projects
         </h1>
         <Button url={"/projects"} text={"View All"} />
