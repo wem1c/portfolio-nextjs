@@ -1,11 +1,13 @@
-import React from "react";
-import ContainerBlock from "../components/ContainerBlock";
+import Head from "next/head";
 import Blog from "../components/Blog";
 
 export default function experience() {
   return (
-    <ContainerBlock title="Blog - Conor C. Peterson">
+    <>
+      <Head>
+        <title>Blog - Conor C. Peterson</title>
+      </Head>
       <Blog />
-    </ContainerBlock>
+    </>
   );
 }

@@ -1,13 +1,18 @@
-import React from "react";
+import Image from "next/image";
+
+import underConstructionSVG from "@public/images/under_construction.svg";
 
 export default function Blog() {
   return (
-    <section className="bg-white">
-      <div className="max-w-6xl mx-auto h-48 bg-white">
-        <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-          Blog
-        </h1>
-      </div>
+    <section className='space-y-10 p-5'>
+      <Image
+        src={underConstructionSVG}
+        quality={100}
+        className='mx-auto lg:w-1/2'
+      />
+      <p className='text-green-800 font-semibold text-center text-3xl'>
+        Coming soon!
+      </p>
     </section>
   );
 }
