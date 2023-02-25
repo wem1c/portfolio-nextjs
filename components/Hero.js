@@ -16,10 +16,9 @@ export default function Hero() {
     { text: "Researcher", color: "#E847FF" },
   ];
   return (
-    <section className='p-5'>
-      {/* Rough text container */}
+    <section>
       <div className='max-w-7xl mx-auto flex flex-col items-center overflow-hidden md:flex-row'>
-        <div className='w-full mx-auto px-5 text-center'>
+        <div className='w-full lg:w-1/2 mx-auto px-5 text-center'>
           <RoughNotationGroup show={true}>
             {highlightedWords.map((word, _idx) => {
               return (
@@ -37,7 +36,7 @@ export default function Hero() {
           src={homeRunSVG}
           quality={100}
           alt='image of a man batting a baseball'
-          className='flex w-2/3 md:w-1/2 lg:w-1/3'
+          className='w-4/5 md:w-1/2 lg:w-2/5'
         />
       </div>
     </section>
