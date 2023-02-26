@@ -31,7 +31,7 @@ export default function Layout({ children }) {
     <>
       <Meta />
       <Navbar icons={fontAwesomeIcons} />
-      <main>{children[0]}</main>
+      <main className='min-h-screen'>{children[0]}</main>
       <Footer icons={fontAwesomeIcons} />
     </>
   );
