@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import underConstructionSVG from "@public/images/under_construction.svg";
 
 export default function Blog() {
@@ -7,6 +6,7 @@ export default function Blog() {
     <section className='space-y-10 p-5'>
       <Image
         src={underConstructionSVG}
+        alt='two workers carrying lumber from an unfinished wooden house'
         quality={100}
         className='mx-auto lg:w-1/2'
       />
