@@ -12,8 +12,8 @@ export default function Hero() {
   const highlightedWords = [
     { text: "Developer", color: "#FFAD54" },
     { text: "Programmer", color: "#3BCBFF" },
-    { text: "Engineer", color: "#B8FF6E" },
     { text: "Researcher", color: "#E847FF" },
+    { text: "Engineer", color: "#B8FF6E" },
   ];
   return (
     <section>
