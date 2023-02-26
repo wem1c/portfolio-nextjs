@@ -1,11 +1,13 @@
-import React from "react";
-import ContainerBlock from "../components/ContainerBlock";
-import Projects from "../components/Projects";
+import Head from "next/head";
+import Projects from "@components/Projects";
 
 export default function projects() {
   return (
-    <ContainerBlock title="Projects - Manu Arora">
+    <>
+      <Head>
+        <title>Projects - Conor C. Peterson</title>
+      </Head>
       <Projects />
-    </ContainerBlock>
+    </>
   );
 }
