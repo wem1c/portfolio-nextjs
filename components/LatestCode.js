@@ -1,6 +1,3 @@
-// Module imports
-import Link from "next/link";
-
 // Component imports
 import Button from "./Button";
 import Repository from "./Repository";
@@ -19,7 +16,7 @@ export default function LatestCode({ repositories }) {
         />
       </header>
 
-      <ul className='grid gap-10 max-w-7xl mx-auto px-10 md:grid-cols-2 lg:grid-cols-3'>
+      <div className='grid gap-10 max-w-7xl mx-auto px-10 md:grid-cols-2 lg:grid-cols-3'>
         {repositories.length > 0 ? (
           repositories.map((repository, _idx) => {
             return <Repository key={_idx} repo={repository} />;
@@ -27,7 +24,7 @@ export default function LatestCode({ repositories }) {
         ) : (
           <p>No repos.</p>
         )}
-      </ul>
+      </div>
     </section>
   );
 }

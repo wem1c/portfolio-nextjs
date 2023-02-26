@@ -26,33 +26,27 @@ export default function Navbar({ icons }) {
             </p>
           </Link>
         </div>
-        <div className='hidden md:block'>
-          <ul className='flex space-x-5'>
-            {pages.map((page, idx) => (
-              <NavLink key={idx} name={page.name} path={page.path} />
-            ))}
-          </ul>
-        </div>
-        {/** Social Media links */}
-        <ul className='flex space-x-6 items-center'>
-          {icons.map((icon, idx) => {
-            return (
-              <li key={idx}>
-                <Link href={icon.href}>
-                  <FontAwesomeIcon icon={icon.icon} size='xl' />
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-
-      <div className='block md:hidden mt-4'>
-        <ul className='flex justify-center space-x-5'>
+        <div className='hidden md:flex space-x-5'>
           {pages.map((page, idx) => (
             <NavLink key={idx} name={page.name} path={page.path} />
           ))}
-        </ul>
+        </div>
+        <div className='flex space-x-6 items-center'>
+          {icons.map((icon) => {
+            return (
+              <Link href={icon.href}>
+                <FontAwesomeIcon icon={icon.icon} size='xl' />
+                <span className='sr-only'>{icon.alt}</span>
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className='flex md:hidden mt-4 justify-center space-x-5'>
+        {pages.map((page, idx) => (
+          <NavLink key={idx} name={page.name} path={page.path} />
+        ))}
       </div>
     </div>
   );
