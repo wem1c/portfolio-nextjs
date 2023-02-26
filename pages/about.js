@@ -8,7 +8,7 @@ import CurrentTechStack from "@components/tech-stacks/CurrentTechStack";
 import FutureTechStack from "@components/tech-stacks/FutureTechStack";
 
 // Data imports
-import Avatar from "@public/images/selfie_avatar.jpg";
+import avatar2 from "@public/images/pfp_circle.png";
 
 export default function about() {
   return (
@@ -16,8 +16,8 @@ export default function about() {
       <Head>
         <title>About - Conor C. Peterson</title>
       </Head>
-      <section className='max-w-7xl mx-auto flex flex-col justify-center items-center lg:flex-row'>
-        <EmailMe image={Avatar} />
+      <section className='max-w-7xl mx-auto'>
+        <EmailMe image={avatar2} />
         <AboutMe />
       </section>
       <section className=' bg-green-800'>
