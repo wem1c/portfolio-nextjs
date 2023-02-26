@@ -8,11 +8,6 @@ module.exports = {
     extend: {
       colors: {
         tan: "#fdf6e3",
-        transitionDuration: {
-          0: "0ms",
-          2000: "2000ms",
-          4000: "4000ms",
-        },
       },
     },
     variants: {
