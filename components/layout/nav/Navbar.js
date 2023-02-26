@@ -10,7 +10,6 @@ const pages = [
   { name: "About", path: "/about" },
   { name: "Projects", path: "/projects" },
   { name: "Blog", path: "/blog" },
-  { name: "Contact", path: "/contact" },
 ];
 
 export default function Navbar({ icons }) {
@@ -19,7 +18,7 @@ export default function Navbar({ icons }) {
       <div className='flex md:flex-row justify-between items-center'>
         <div className='flex flex-col'>
           <Link href='/'>
-            <h1 className='font-bold text-green-800 text-2xl'>
+            <h1 className='font-semibold text-green-800 text-2xl'>
               Conor C. Peterson
             </h1>
             <p className='text-base font-light text-gray-500'>
