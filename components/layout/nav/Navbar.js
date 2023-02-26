@@ -26,11 +26,11 @@ export default function Navbar({ icons }) {
             </p>
           </Link>
         </div>
-        <div className='hidden md:flex space-x-5'>
+        <nav className='hidden md:flex space-x-5'>
           {pages.map((page, idx) => (
             <NavLink key={idx} name={page.name} path={page.path} />
           ))}
-        </div>
+        </nav>
         <div className='flex space-x-6 items-center'>
           {icons.map((icon) => {
             return (
@@ -43,11 +43,11 @@ export default function Navbar({ icons }) {
         </div>
       </div>
 
-      <div className='flex md:hidden mt-4 justify-center space-x-5'>
+      <nav className='flex md:hidden mt-4 justify-center space-x-5'>
         {pages.map((page, idx) => (
           <NavLink key={idx} name={page.name} path={page.path} />
         ))}
-      </div>
+      </nav>
     </div>
   );
 }
