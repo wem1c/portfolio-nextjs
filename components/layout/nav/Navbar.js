@@ -21,7 +21,7 @@ export default function Navbar({ icons }) {
             <h1 className='font-semibold text-green-800 text-2xl'>
               Conor C. Peterson
             </h1>
-            <p className='text-base font-light text-gray-500'>
+            <p className='text-base font-light text-gray-600'>
               Fullstack Developer
             </p>
           </Link>
