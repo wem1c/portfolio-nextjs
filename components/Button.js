@@ -1,11 +1,13 @@
 // Module imports
 import Link from "next/link";
 
-const Button = ({ url, text }) => {
+const Button = ({ url, text, inverse }) => {
   return (
     <Link
       href={url}
-      className='mx-auto bg-teal-600 text-tan px-6 py-2 rounded-md shadow-lg  text-lg md:text-xl font-semibold flex flex-row space-x-4 items-center justify-center w-fit transition-transform duration-300 hover:scale-110'
+      className={`mx-auto ${
+        inverse == "true" ? "bg-tan text-green-800" : "bg-green-800 text-tan"
+      } px-6 py-2 rounded-md shadow-lg  text-lg md:text-xl font-semibold flex flex-row space-x-4 items-center justify-center w-fit transition-transform duration-300 hover:scale-110`}
     >
       <p>{text}</p>
       <svg

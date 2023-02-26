@@ -32,7 +32,7 @@ export default function FavouriteProjects() {
         <h1 className='text-3xl md:text-4xl text-tan font-bold text-center'>
           Favorite Projects
         </h1>
-        <Button url={"/projects"} text={"View All"} />
+        <Button url={"/projects"} text={"View All"} inverse='true' />
       </header>
 
       <ProjectGrid projects={favoriteProjects} />
