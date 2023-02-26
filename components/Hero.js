@@ -34,7 +34,7 @@ export default function Hero() {
         <Image
           priority
           src={homeRunSVG}
-          quality={100}
+          sizes='100vw, 100vw, 50vw, 50vw, 50vw'
           alt='image of a man batting a baseball'
           className='w-4/5 md:w-1/2 lg:w-2/5'
         />
