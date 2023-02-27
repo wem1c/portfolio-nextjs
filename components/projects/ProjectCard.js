@@ -18,6 +18,7 @@ const Project = ({ link, image, title, priority }) => {
             src={image}
             alt='project image'
             className='transition-transform ease-in-out duration-700 hover:scale-150'
+            sizes='100vw, 100vw, 50vw, 33vw, 33vw'
           />
         )}
 

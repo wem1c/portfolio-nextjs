@@ -4,7 +4,12 @@ import Button from "@components/Button";
 const EmailMe = ({ image }) => {
   return (
     <div className='p-5 space-y-5 float-left md:w-1/2 lg:w-2/5'>
-      <Image src={image} alt='headshot' className='w-full max-w-md mx-auto' />
+      <Image
+        src={image}
+        alt='headshot'
+        className='w-full max-w-md mx-auto'
+        priority
+      />
       <Button url='mailto:conorpetersondev@gmail.com' text='E-mail me!' />
     </div>
   );
