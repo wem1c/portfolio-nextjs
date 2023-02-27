@@ -23,7 +23,7 @@ export default function Hero() {
             {highlightedWords.map((word, _idx) => {
               return (
                 <RainbowHighlight key={_idx} color={word.color}>
-                  <h1 className='text-4xl md:text-5xl font-bold text-green-800 my-2'>
+                  <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-green-800 my-2'>
                     {word.text}
                   </h1>
                 </RainbowHighlight>
