@@ -4,7 +4,7 @@ import Image from "next/image";
 const Project = ({ link, image, title, priority }) => {
   return (
     <Link href={link}>
-      <div className='relative overflow-hidden border-2 border-tan shadow-lg max-w-xl'>
+      <div className='relative overflow-hidden border-2 border-tan shadow-lg max-w-xl aspect-video'>
         {priority === "true" ? (
           <Image
             src={image}
