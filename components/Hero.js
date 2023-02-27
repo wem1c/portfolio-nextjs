@@ -10,10 +10,10 @@ import homeRunSVG from "@public/images/home_run.svg";
 
 export default function Hero() {
   const highlightedWords = [
-    { text: "Developer", color: "#FFAD54" },
-    { text: "Programmer", color: "#3BCBFF" },
-    { text: "Researcher", color: "#E847FF" },
-    { text: "Engineer", color: "#B8FF6E" },
+    { text: "Developer", color: "#C93665" },
+    { text: "Programmer", color: "#229C95" },
+    { text: "Engineer", color: "#B34B15" },
+    { text: "Researcher", color: "#B3399D" },
   ];
   return (
     <section>
@@ -23,7 +23,7 @@ export default function Hero() {
             {highlightedWords.map((word, _idx) => {
               return (
                 <RainbowHighlight key={_idx} color={word.color}>
-                  <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-green-800 my-2'>
+                  <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold text-tan my-2'>
                     {word.text}
                   </h1>
                 </RainbowHighlight>
