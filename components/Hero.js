@@ -10,9 +10,9 @@ import homeRunSVG from "@public/images/home_run.svg";
 
 export default function Hero() {
   const highlightedWords = [
+    { text: "Engineer", color: "#B34B15" },
     { text: "Developer", color: "#C93665" },
     { text: "Programmer", color: "#229C95" },
-    { text: "Engineer", color: "#B34B15" },
     { text: "Researcher", color: "#B3399D" },
   ];
   return (

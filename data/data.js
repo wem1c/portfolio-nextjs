@@ -1,16 +1,9 @@
 const userData = {
-  projects: [
-    {
-      title: "Tailwind Master Kit",
-      link: "https://tailwindmasterkit.com",
-      imgUrl: "/tmk.jpg",
-    },
-  ],
   about: {
     description: [
       "Hello there! My name is Conor and this is my humble abode on the internet.",
 
-      "As you may have gathered already, I am a Fullstack Web Developer. What this means is that I create websites/web-apps all the way through. From the code that makes the looks to the server APIs that manage data, all the way to the databases that store it! (and everything else in-between.)",
+      "As you may have gathered already, I am a Full-Stack Engineer. What this means is that I create websites/web-apps all the way through. From the code that makes the looks to the server APIs that manage data, all the way to the databases that store it! (and everything else in-between.)",
 
       "UI/UX intuitiveness, performance, and scalability are what I focus on, but I don't skimp on style! I love exploring new tech, so for these projects I always try to pick the most appropriate tech. (I do love me some Jamstack, though!)",
 

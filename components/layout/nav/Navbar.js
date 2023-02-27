@@ -19,7 +19,7 @@ export default function Navbar() {
           Conor C. Peterson
         </h1>
         <p className='text-base font-light text-gray-600'>
-          Fullstack Developer
+          Full-Stack Engineer
         </p>
       </Link>
       <nav className='hidden md:flex space-x-5'>
