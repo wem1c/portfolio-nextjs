@@ -32,9 +32,9 @@ export default function Navbar({ icons }) {
           ))}
         </nav>
         <div className='flex space-x-6 items-center'>
-          {icons.map((icon) => {
+          {icons.map((icon, idx) => {
             return (
-              <Link href={icon.href}>
+              <Link key={idx} href={icon.href}>
                 <FontAwesomeIcon icon={icon.icon} size='xl' />
                 <span className='sr-only'>{icon.alt}</span>
               </Link>

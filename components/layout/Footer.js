@@ -9,7 +9,7 @@ export default function Footer({ icons }) {
       <div className='space-x-5 flex flex-row items-center'>
         {icons.map((icon, idx) => {
           return (
-            <Link href={icon.href}>
+            <Link key={idx} href={icon.href}>
               <FontAwesomeIcon icon={icon.icon} size='xl' />
               <span className='sr-only'>{icon.alt}</span>
             </Link>
