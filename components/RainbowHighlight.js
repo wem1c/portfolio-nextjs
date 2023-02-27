@@ -7,9 +7,10 @@ const RainbowHighlight = ({ color, children }) => {
   return (
     <RoughNotation
       type='highlight'
-      iterations={2}
+      iterations={1}
       animationDuration={animationDuration}
       color={color}
+      animationDelay={1000}
     >
       {children}
     </RoughNotation>
