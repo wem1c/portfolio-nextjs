@@ -21,7 +21,7 @@ export default function about() {
         <AboutMe />
       </section>
       <section className=' bg-green-800'>
-        <div className='max-w-7xl mx-auto flex justify-between flex-col lg:flex-row'>
+        <div className='max-w-7xl mx-auto flex justify-around flex-col lg:flex-row'>
           <CurrentTechStack />
           <FutureTechStack />
         </div>

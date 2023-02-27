@@ -1,15 +1,28 @@
-// Module imports
+// Modules
 import {
-  Siamazonaws,
-  Sigooglecloud,
-  Sisvelte,
-  Sireact,
-  Simongodb,
-  Sifirebase,
-  Siupstash,
-  Sikubernetes,
-  Sistoryblok,
-} from "@icons-pack/react-simple-icons";
+  siAmazonaws,
+  siGooglecloud,
+  siSvelte,
+  siMongodb,
+  siFirebase,
+  siUpstash,
+  siKubernetes,
+  siStoryblok,
+} from "simple-icons";
+
+// Components
+import IconGrid from "./IconGrid";
+
+const icons = [
+  siAmazonaws,
+  siGooglecloud,
+  siSvelte,
+  siMongodb,
+  siFirebase,
+  siUpstash,
+  siKubernetes,
+  siStoryblok,
+];
 
 const FutureTechStack = () => {
   return (
@@ -17,17 +30,7 @@ const FutureTechStack = () => {
       <h1 className='p-5 text-tan w-fit text-center text-4xl font-bold mx-auto'>
         Tech I'm Exploring:
       </h1>
-      <div className='max-w-7xl mx-auto grid grid-cols-3 gap-5 items-center place-items-center md:grid-cols-5'>
-        <Sisvelte color='default' size={80} title='SvelteKit' />
-        <Sistoryblok color='default' size={80} title='Storyblok CMS' />
-        <Siamazonaws color='default' size={80} title='AWS' />
-        <Siupstash color='default' size={80} title='Upstash' />
-        <Sifirebase color='default' size={80} title='Firebase' />
-        <Simongodb color='default' size={80} title='MongoDB' />
-        <Sireact color='default' size={80} title='React Native' />
-        <Sigooglecloud color='default' size={80} title='Google Cloud' />
-        <Sikubernetes color='default' size={80} title='Kubernetes' />
-      </div>
+      <IconGrid icons={icons} />
     </section>
   );
 };
