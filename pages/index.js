@@ -22,6 +22,7 @@ export const getStaticProps = async () => {
       props: {
         repositories,
       },
+      revalidate: 86400,
     };
   } catch (err) {
     console.error("getServerSideProps ERROR: ", err);
