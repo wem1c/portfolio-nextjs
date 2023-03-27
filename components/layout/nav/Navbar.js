@@ -15,12 +15,8 @@ export default function Navbar() {
   return (
     <div className='max-w-7xl mx-auto p-5 flex flex-col md:flex-row justify-between items-center'>
       <Link href='/' className='flex flex-col text-center md:text-left'>
-        <h1 className='font-semibold text-green-800 text-2xl'>
-          Conor C. Peterson
-        </h1>
-        <p className='text-base font-light text-gray-600'>
-          Full-Stack Engineer
-        </p>
+        <h1 className='font-bold text-green-800 text-2xl'>Conor C. Peterson</h1>
+        <p className='text-lg font-light text-gray-600'>Full-Stack Engineer</p>
       </Link>
       <nav className='hidden md:flex space-x-5'>
         {pages.map((page, idx) => (
