@@ -1,6 +1,7 @@
 // Component imports
 import Button from "@components/Button";
-import ProjectGrid from "./ProjectGrid";
+import ItemGrid from "@components/ItemGrid";
+import ProjectCard from "@components/projects/ProjectCard";
 
 // Image imports
 import portfolioImage from "@public/images/projects/portofolio_1600x900.png";
@@ -35,7 +36,22 @@ export default function FavouriteProjects() {
         <Button url={"/projects"} text={"View All"} inverse='true' />
       </header>
 
-      <ProjectGrid projects={favoriteProjects} />
+      <ItemGrid>
+        {favoriteProjects.length > 0 ? (
+          favoriteProjects.map((project, _idx) => {
+            return (
+              <ProjectCard
+                key={_idx}
+                link={project.link}
+                image={project.image}
+                title={project.title}
+              />
+            );
+          })
+        ) : (
+          <p>No projects.</p>
+        )}
+      </ItemGrid>
     </section>
   );
 }

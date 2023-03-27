@@ -33,3 +33,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# post images created after script
+/public/images/posts

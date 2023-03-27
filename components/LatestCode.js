@@ -1,6 +1,7 @@
 // Component imports
 import Button from "./Button";
 import Repository from "./Repository";
+import ItemGrid from "./ItemGrid";
 
 export default function LatestCode({ repositories }) {
   return (
@@ -12,7 +13,7 @@ export default function LatestCode({ repositories }) {
         <Button url={`https://github.com/wem1c`} text={"View All"} />
       </header>
 
-      <div className='grid gap-10 max-w-7xl mx-auto px-10 md:grid-cols-2 lg:grid-cols-3'>
+      <ItemGrid>
         {repositories.length > 0 ? (
           repositories.map((repository, _idx) => {
             return <Repository key={_idx} repo={repository} />;
@@ -20,7 +21,7 @@ export default function LatestCode({ repositories }) {
         ) : (
           <p>No repos.</p>
         )}
-      </div>
+      </ItemGrid>
     </section>
   );
 }

@@ -10,11 +10,6 @@ module.exports = {
         tan: "#fdf6e3",
       },
     },
-    variants: {
-      extend: {},
-      display: ["responsive", "group-hover", "group-focus"],
-    },
-
-    plugins: [],
   },
+  plugins: [require("@tailwindcss/typography")],
 };
