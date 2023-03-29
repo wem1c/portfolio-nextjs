@@ -36,3 +36,6 @@ yarn-error.log*
 
 # post images created after script
 /public/images/posts
+
+# vscode debugging
+.vscode
