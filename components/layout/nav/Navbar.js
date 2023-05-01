@@ -7,7 +7,7 @@ import NavLink from "./NavLink";
 // Data
 const pages = [
   { name: "About", path: "/about" },
-  { name: "Projects", path: "/projects" },
+  //{ name: "Projects", path: "/projects" },
   { name: "Blog", path: "/blog" },
 ];
 
