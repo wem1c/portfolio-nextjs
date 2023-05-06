@@ -1,17 +1,15 @@
 const userData = {
   about: {
     description: [
-      "Hello there! My name is Conor and this is my humble abode on the internet.",
+      "Hello there! My name is Conor and this is my humble abode on the internet. 🏡",
 
-      "As you may have gathered already, I am a Full-Stack Engineer. What this means is that I create websites/web-apps all the way through. From the code that makes the looks to the server APIs that manage data, all the way to the databases that store it! (and everything else in-between.)",
+      "I'm passionate about creating websites and web applications from start to finish, which is why I specialize in Full-Stack Development. From crafting intuitive user interfaces to designing robust APIs and databases, I enjoy taking on every aspect of a project. But my interests and skills extend beyond just web development. I approach all engineering challenges with the same enthusiasm and dedication to quality.",
 
-      "UI/UX intuitiveness, performance, and scalability are what I focus on, but I don't skimp on style! I love exploring new tech, so for these projects I always try to pick the most appropriate tech. (I do love me some Jamstack, though!)",
+      "I'm a true technology enthusiast, always eager to explore new frontiers and expand my knowledge in the world of computing. While my current carrer is in full-stack web development, I'm constantly learning and experimenting with new tools and platforms. I'm proficient with Linux, and I'm currently honing my skills in Mobile and Cloud Development. I'm also passionate about exploring cutting-edge fields like AI and Machine Learning.",
 
-      "Anything computing-related is interesting to me, so I do wear many more hats in the CS/IT space. I use Linux, I'm learning Android and Cloud Development, and I research AI and Machine Learning.",
+      "In my free time, I'm an avid reader of research papers, books, and articles on a wide range of tech topics, and I enjoy sharing my insights and opinions through my writing. Whether I'm coding up a web app or diving into the latest research on quantum computing, I'm always seeking new challenges and opportunities to grow as a developer.",
 
-      "In my free time I read a lot of research papers, books, articles, and I write about what I find interesting. You may catch some of my writing over on the blog!",
-
-      "Some of my pastimes also include, but are not limited to, video games, TTRPGs, YouTube, and Twitch. I also listen to a lot of music. I'm not joking, my Spotify stats are booming.",
+      "I'm always excited to collaborate with clients on projects that challenge and inspire me. Whether you need help with building a new website or improving an existing one, feel free to email me and let's get a conversation going!",
     ],
   },
 };
