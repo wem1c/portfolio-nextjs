@@ -3,7 +3,7 @@ title: "🦜 Stochastic Parrots: A summary (sort of)."
 description: "The least amount of information you should know about how the trouble with Large Language Models."
 category: "research"
 date: "2023-03-27"
-bannerImage: "/images/posts/stochastic-parrots-a-summary/parrot.jpg"
+bannerImage: "/images/posts/stochastic-parrots-a-summary.jpg"
 bannerImageAlt: "image of a colorful parrot"
 bannerImageAttribute: 'Photo by <a href="https://unsplash.com/@davidclode?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Clode</a> on <a href="https://unsplash.com/photos/G7Jd9fMuRHs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 tags:

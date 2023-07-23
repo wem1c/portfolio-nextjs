@@ -33,7 +33,7 @@ export default function Post({ frontmatter, content }) {
           src={bannerImage}
           width={650}
           height={365}
-          sizes='(min-width: 1536px) 45vw,(min-width: 1280px) 55vw,(min-width: 1024px) 65wv,(min-width: 768px) 85vw, 100vw'
+          sizes='100vw'
           alt={bannerImageAlt}
           priority
           className='mx-auto'
