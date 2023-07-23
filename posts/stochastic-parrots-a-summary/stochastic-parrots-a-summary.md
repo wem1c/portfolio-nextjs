@@ -1,5 +1,6 @@
 ---
 title: "🦜 Stochastic Parrots: A summary (sort of)."
+description: "The least amount of information you should know about how the trouble with Large Language Models."
 category: "research"
 date: "2023-03-27"
 bannerImage: "/images/posts/stochastic-parrots-a-summary/parrot.jpg"

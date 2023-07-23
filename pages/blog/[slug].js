@@ -1,29 +1,49 @@
+// import Next components
+import Image from "next/image";
+import Head from "next/head";
+
+// import modules
 import fs from "fs";
 import matter from "gray-matter";
 import md from "markdown-it";
 
-import Image from "next/image";
-
-// The page for each post
 export default function Post({ frontmatter, content }) {
-  const { bannerImage, bannerImageAlt, bannerImageAttribute } = frontmatter;
+  const {
+    bannerImage,
+    bannerImageAlt,
+    bannerImageAttribute,
+    title,
+    description,
+  } = frontmatter;
 
   return (
-    <section className='p-5'>
-      <Image
-        src={bannerImage}
-        width={650}
-        height={365}
-        sizes='(min-width: 1536px) 45vw,(min-width: 1280px) 55vw,(min-width: 1024px) 65wv,(min-width: 768px) 85vw, 100vw'
-        alt={bannerImageAlt}
-        priority
-        className='mx-auto'
-      />
-      <article
-        className='prose prose-a:text-blue-600 mx-auto mt-5'
-        dangerouslySetInnerHTML={{ __html: md().render(content) }}
-      />
-    </section>
+    <>
+      <Head>
+        <title>{title}</title>
+        <meta property='description' content={description} key='description' />
+        <meta property='og:title' content={title} key='ogtitle' />
+        <meta
+          property='og:description'
+          content={description}
+          key='ogdescription'
+        />
+      </Head>
+      <section className='p-5'>
+        <Image
+          src={bannerImage}
+          width={650}
+          height={365}
+          sizes='(min-width: 1536px) 45vw,(min-width: 1280px) 55vw,(min-width: 1024px) 65wv,(min-width: 768px) 85vw, 100vw'
+          alt={bannerImageAlt}
+          priority
+          className='mx-auto'
+        />
+        <article
+          className='mx-auto mt-5 prose prose-a:text-blue-600'
+          dangerouslySetInnerHTML={{ __html: md().render(content) }}
+        />
+      </section>
+    </>
   );
 }
 

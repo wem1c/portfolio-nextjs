@@ -1,5 +1,6 @@
 ---
 title: "⚙️ COG #1: OpenStreetMap, Next.js 13, starting a home server..."
+description: "I find out OpenStreetMap exists, learn about new Next features, and dream about electric sheep."
 date: "2023-07-14"
 category: "weeklog"
 bannerImage: "/images/posts/cog_1/cog.jpg"

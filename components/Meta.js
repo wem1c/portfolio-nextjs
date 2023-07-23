@@ -20,7 +20,7 @@ export default function Meta() {
   return (
     <Head>
       <title>{meta.title}</title>
-      <meta name='description' content={meta.description} />
+      <meta name='description' content={meta.description} key='description' />
       <meta name='robots' content='follow, index' />
       <link
         rel='canonical'
@@ -67,8 +67,12 @@ export default function Meta() {
       />
       <meta property='og:type' content={meta.type} />
       <meta property='og:site_name' content='Conor C. Peterson' />
-      <meta property='og:description' content={meta.description} />
-      <meta property='og:title' content={meta.title} />
+      <meta
+        property='og:description'
+        content={meta.description}
+        key='ogdescription'
+      />
+      <meta property='og:title' content={meta.title} key='ogtitle' />
       <meta property='og:image' content={meta.image} />
       <meta property='og:image:alt' content={meta.image} />
       {meta.date && (
