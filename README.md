@@ -1,3 +1,9 @@
+# DEPRECATED
+
+This was the first iteration of my personal website which I've since rewritten using [11ty](https://www.11ty.dev/)!
+
+The new project can be found on [Codeberg](https://codeberg.org/wem1c/portfolio_11ty) (mirrored to [GitHub](https://github.com/wem1c/portfolio_11ty)).
+
 # What is this?
 
 This is my personal website project! It servers as a portfolio and about me, a blog, and a playground of sorts for me to test stuff.
